@@ -1,0 +1,23 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "selector-class-pattern": null
+  },
+  "overrides": [
+    {
+      "files": ["src/components/**/*.css", "src/sections/**/*.css", "src/pages/**/*.css"],
+      "rules": {
+        "color-no-hex": [
+          true,
+          {
+            "message": "Use a design token (var(--color-…)) instead of a raw hex colour. See AGENTS.md."
+          }
+        ],
+        "color-named": [
+          "never",
+          { "message": "Use a design token instead of a named colour. See AGENTS.md." }
+        ]
+      }
+    }
+  ]
+}
