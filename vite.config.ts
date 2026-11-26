@@ -20,7 +20,13 @@ export default defineConfig({
           browser: {
             enabled: true,
             headless: true,
-            provider: playwright({}),
+            // Optional: CHROME_PATH=/path/to/chrome uses an installed Chrome instead of
+            // Playwright's downloaded Chromium (for environments that cannot download browsers).
+            provider: playwright(
+              process.env.CHROME_PATH
+                ? { launchOptions: { executablePath: process.env.CHROME_PATH } }
+                : {},
+            ),
             instances: [{ browser: 'chromium' }],
           },
         },
