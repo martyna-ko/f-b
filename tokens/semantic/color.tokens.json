@@ -1,0 +1,117 @@
+{
+  "color": {
+    "$type": "color",
+    "text": {
+      "default": {
+        "$value": "{color.neutral.900}",
+        "$description": "Body text and headings."
+      },
+      "muted": {
+        "$value": "{color.neutral.600}",
+        "$description": "Secondary text: captions, meta information."
+      },
+      "inverse": {
+        "$value": "{color.neutral.0}",
+        "$description": "Text on dark or violet backgrounds."
+      },
+      "link": {
+        "$value": "{color.brand.violet.600}",
+        "$description": "Links in running text."
+      },
+      "error": {
+        "$value": "{color.red.700}",
+        "$description": "Error messages."
+      }
+    },
+    "background": {
+      "default": {
+        "$value": "{color.neutral.0}",
+        "$description": "Page background."
+      },
+      "subtle": {
+        "$value": "{color.neutral.50}",
+        "$description": "Alternate sections, cards on white."
+      },
+      "inverse": {
+        "$value": "{color.neutral.1000}",
+        "$description": "Dark sections and footer — the black of the studio's social posts."
+      }
+    },
+    "audience": {
+      "kids": {
+        "accent": {
+          "$value": "{color.brand.orange.500}",
+          "$description": "Marks children's content: borders, badges, icons. Never as text on white."
+        },
+        "surface": {
+          "$value": "{color.brand.orange.50}",
+          "$description": "Light background for children's sections."
+        }
+      },
+      "family": {
+        "accent": {
+          "$value": "{color.brand.green.900}",
+          "$description": "Marks family content."
+        },
+        "surface": {
+          "$value": "{color.brand.green.50}",
+          "$description": "Light background for family sections."
+        }
+      },
+      "adults": {
+        "accent": {
+          "$value": "{color.brand.violet.600}",
+          "$description": "Marks adult content."
+        },
+        "surface": {
+          "$value": "{color.brand.violet.50}",
+          "$description": "Light background for adult sections."
+        }
+      }
+    },
+    "action": {
+      "primary": {
+        "bg": {
+          "$value": "{color.brand.violet.600}",
+          "$description": "Main call to action, e.g. Book."
+        },
+        "bg-hover": {
+          "$value": "{color.brand.violet.700}"
+        },
+        "text": {
+          "$value": "{color.neutral.0}",
+          "$description": "5.93:1 on violet 600."
+        }
+      },
+      "secondary": {
+        "bg": {
+          "$value": "{color.brand.orange.500}",
+          "$description": "Secondary call to action."
+        },
+        "bg-hover": {
+          "$value": "{color.brand.orange.600}"
+        },
+        "text": {
+          "$value": "{color.neutral.1000}",
+          "$description": "Black on orange: 9.67:1. Never white on orange."
+        }
+      }
+    },
+    "border": {
+      "subtle": {
+        "$value": "{color.neutral.200}",
+        "$description": "Decorative dividers only."
+      },
+      "default": {
+        "$value": "{color.neutral.500}",
+        "$description": "Meaningful borders: inputs, outlined buttons (≥ 3:1)."
+      }
+    },
+    "focus": {
+      "ring": {
+        "$value": "{color.brand.violet.600}",
+        "$description": "Keyboard focus outline on all interactive elements."
+      }
+    }
+  }
+}

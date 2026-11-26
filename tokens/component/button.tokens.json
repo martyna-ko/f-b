@@ -1,0 +1,25 @@
+{
+  "button": {
+    "radius": {
+      "$type": "dimension",
+      "$value": "{radius.pill}",
+      "$description": "Pill shape echoes the circle in the logo."
+    },
+    "padding-x": {
+      "$type": "dimension",
+      "$value": "{space.6}"
+    },
+    "padding-y": {
+      "$type": "dimension",
+      "$value": "{space.3}"
+    },
+    "min-height": {
+      "$type": "dimension",
+      "$value": {
+        "value": 44,
+        "unit": "px"
+      },
+      "$description": "Minimum touch target (WCAG 2.5.5 recommends 44px)."
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "color": {
+    "$type": "color",
+    "brand": {
+      "green": {
+        "50": {
+          "$value": "#E7F2EA",
+          "$description": "Derived tint of brand green for light backgrounds. Proposed — needs approval."
+        },
+        "900": {
+          "$value": "#055020",
+          "$description": "Brand green from the Canva brand kit."
+        }
+      },
+      "violet": {
+        "50": {
+          "$value": "#F4ECFF",
+          "$description": "Derived tint of brand violet for light backgrounds. Proposed — needs approval."
+        },
+        "600": {
+          "$value": "#8715FC",
+          "$description": "Brand violet from the Canva brand kit."
+        },
+        "700": {
+          "$value": "#6B0FD1",
+          "$description": "Darker brand violet for hover and pressed states. Proposed — needs approval."
+        }
+      },
+      "orange": {
+        "50": {
+          "$value": "#FFF3E0",
+          "$description": "Derived tint of brand orange for light backgrounds. Proposed — needs approval."
+        },
+        "500": {
+          "$value": "#FB9912",
+          "$description": "Brand orange from the Canva brand kit. Never use as text on white (contrast 2.17:1)."
+        },
+        "600": {
+          "$value": "#E07F00",
+          "$description": "Darker brand orange for hover and pressed states. Proposed — needs approval."
+        }
+      }
+    },
+    "neutral": {
+      "0": {
+        "$value": "#FFFFFF",
+        "$description": "White, from the Canva brand kit."
+      },
+      "50": {
+        "$value": "#F6F6F3",
+        "$description": "Warm off-white for subtle backgrounds. Proposed."
+      },
+      "200": {
+        "$value": "#DEDED9",
+        "$description": "Light warm grey for decorative dividers only (not for meaningful borders). Proposed."
+      },
+      "500": {
+        "$value": "#85857F",
+        "$description": "Mid warm grey: minimum for meaningful borders such as inputs (3.71:1 on white). Proposed."
+      },
+      "600": {
+        "$value": "#5E5E59",
+        "$description": "Dark warm grey for secondary text (6.52:1 on white). Proposed."
+      },
+      "900": {
+        "$value": "#1E1E1C",
+        "$description": "Near-black for body text (16.7:1 on white). Proposed."
+      },
+      "1000": {
+        "$value": "#000000",
+        "$description": "Black, from the Canva brand kit."
+      }
+    },
+    "red": {
+      "700": {
+        "$value": "#B42318",
+        "$description": "Error colour (6.57:1 on white). Proposed."
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "font": {
+    "role": {
+      "heading": {
+        "$type": "fontFamily",
+        "$value": "{font.family.josefin-sans}",
+        "$description": "All headings."
+      },
+      "body": {
+        "$type": "fontFamily",
+        "$value": "{font.family.dm-sans}",
+        "$description": "Body text, UI labels, buttons."
+      }
+    }
+  },
+  "text": {
+    "heading": {
+      "1": {
+        "$type": "dimension",
+        "$value": "{font.size.700}",
+        "$description": "Page title (h1). 40px; use 56px only on the Home hero."
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "{font.size.600}",
+        "$description": "Section title (h2)."
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "{font.size.500}",
+        "$description": "Card and subsection title (h3)."
+      }
+    },
+    "body": {
+      "lg": {
+        "$type": "dimension",
+        "$value": "{font.size.400}",
+        "$description": "Lead paragraph."
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{font.size.300}",
+        "$description": "Default body text."
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{font.size.200}",
+        "$description": "Captions, meta, schedule details."
+      }
+    }
+  }
+}

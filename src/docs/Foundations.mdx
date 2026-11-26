@@ -1,0 +1,61 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { ColorTokens, DimensionTokens, TypeScale } from './TokenTables';
+
+<Meta title="Foundations/Design tokens" />
+
+# Design tokens
+
+Everything on this page is read from the generated tokens (`src/tokens/tokens.json`), built from `tokens/**/*.tokens.json`. To change a value, change the token file in a pull request — never this page.
+
+**Rule for components:** use **semantic** tokens (`--color-action-primary-bg`), never primitives (`--color-brand-violet-600`) or raw values (`#8715FC`). Stylelint enforces this.
+
+## Semantic colours — use these
+
+### Text
+
+<ColorTokens prefix="color-text" />
+
+### Backgrounds
+
+<ColorTokens prefix="color-background" />
+
+### Audiences
+
+Orange marks children's content, green marks family content, violet marks adult content. Orange is never used as text on white.
+
+<ColorTokens prefix="color-audience" />
+
+### Actions
+
+<ColorTokens prefix="color-action" />
+
+### Borders and focus
+
+<ColorTokens prefix="color-border" />
+<ColorTokens prefix="color-focus" />
+
+## Primitive colours — reference only
+
+From the Canva brand kit: green `#055020`, violet `#8715FC`, orange `#FB9912`, black and white. Tints, shades and neutrals are derived.
+
+<ColorTokens prefix="color-brand" />
+<ColorTokens prefix="color-neutral" />
+
+## Typography
+
+Headings: **Josefin Sans** (the logo font). Body: **DM Sans**.
+
+<TypeScale prefix="text-heading" />
+<TypeScale prefix="text-body" />
+
+## Spacing (4px grid)
+
+<DimensionTokens prefix="space" />
+
+## Radius
+
+<DimensionTokens prefix="radius" />
+
+## Breakpoints (mobile first, min-width)
+
+<DimensionTokens prefix="breakpoint" />

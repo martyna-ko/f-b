@@ -10,14 +10,20 @@
         "color-no-hex": [
           true,
           {
-            "message": "Use a design token (var(--color-…)) instead of a raw hex colour. See AGENTS.md."
+            "message": "Use a design token (var(--color-\u2026)) instead of a raw hex colour. See AGENTS.md."
           }
         ],
         "color-named": [
           "never",
-          { "message": "Use a design token instead of a named colour. See AGENTS.md." }
-        ]
+          {
+            "message": "Use a design token instead of a named colour. See AGENTS.md."
+          }
+        ],
+        "declaration-property-value-disallowed-list": {
+          "/.*/": ["/var\\(--color-(brand|neutral|red)-/", "/var\\(--font-(family|size)-/"]
+        }
       }
     }
-  ]
+  ],
+  "ignoreFiles": ["src/tokens/**", "dist/**", "storybook-static/**"]
 }
