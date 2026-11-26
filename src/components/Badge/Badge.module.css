@@ -1,0 +1,32 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-role-body);
+  font-size: var(--text-body-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-line-height-snug);
+  white-space: nowrap;
+}
+
+.kids {
+  background: var(--color-audience-kids-accent);
+  color: var(--color-audience-kids-on-accent);
+}
+
+.family {
+  background: var(--color-audience-family-accent);
+  color: var(--color-audience-family-on-accent);
+}
+
+.adults {
+  background: var(--color-audience-adults-accent);
+  color: var(--color-audience-adults-on-accent);
+}
+
+.neutral {
+  background: var(--color-background-subtle);
+  color: var(--color-text-default);
+  box-shadow: inset 0 0 0 1px var(--color-border-subtle);
+}

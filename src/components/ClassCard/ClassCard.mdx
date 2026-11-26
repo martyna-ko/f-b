@@ -1,0 +1,62 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as Stories from './ClassCard.stories';
+
+<Meta of={Stories} />
+
+# ClassCard
+
+**Purpose:** answers the four questions from our user flows in one place — _what is it, is it for me, when is it, how do I book?_ Based on the class row in the studio's existing Figma schedule.
+
+<Canvas of={Stories.Kids} />
+<Controls of={Stories.Kids} />
+
+## Anatomy
+
+1. Audience accent (coloured left border) and audience badge — who it is for, in words and colour
+2. Level badge (optional)
+3. Title (heading — level set by `headingLevel`)
+4. Day and time
+5. Instructor and price (optional)
+6. Note — requirement to know before booking (optional)
+7. Places status (optional) and booking link → Fitssey, new tab
+
+## Variants
+
+<Canvas of={Stories.Family} />
+<Canvas of={Stories.AdultsWithNote} />
+
+## States
+
+| State            | `spotsLeft` | What changes                              |
+| ---------------- | ----------- | ----------------------------------------- |
+| Places available | 3+          | "4 places left", primary **Book**         |
+| Few places       | 1–2         | Bold "Only 2 places left" / "Last place!" |
+| Full             | 0           | "Full", outline **See in Fitssey**        |
+| Unknown          | omitted     | No status line                            |
+
+<Canvas of={Stories.FewPlacesLeft} />
+<Canvas of={Stories.Full} />
+
+## Usage
+
+- ✅ Use in the schedule and on audience pages (kids, family, adults).
+- ✅ Always fill `audienceLabel` in words ("Kids 7–10"), never rely on colour alone.
+- ✅ Use `note` for requirements that affect the decision (minimum height for aerial hoop).
+- ✅ Pass translated `labels` on Polish pages — see the Polish story.
+- ❌ Don't invent places, prices or times: take them from `content/`.
+- ❌ Don't build a booking form — booking always happens in Fitssey.
+
+<Canvas of={Stories.Polish} />
+
+## Accessibility
+
+- `<article>` with a real heading, so screen-reader users can jump between classes.
+- Times use `<time>` elements.
+- The booking link's accessible name includes the class, day and time ("Book: Aerial hammocks, Wednesday 16:00 (opens in a new tab)"), so several "Book" links on one page are distinguishable.
+- Places status is announced politely when it changes.
+
+## Responsive
+
+Mobile first: everything stacks and the button spans the width. From 480px the status and button sit on one row.
+
+<Canvas of={Stories.Mobile320} />
