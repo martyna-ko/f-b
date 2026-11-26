@@ -62,12 +62,12 @@ export const AdultsWithNote: Story = {
 /** Only a few places left: status is emphasised. */
 export const FewPlacesLeft: Story = { args: { spotsLeft: 1 } };
 
-/** Full: the call to action changes to a low-emphasis link to Fitssey. */
+/** Full: the call to action becomes "Join the waiting list" in Fitssey. */
 export const Full: Story = {
   args: { spotsLeft: 0 },
   play: async ({ canvas }) => {
     await expect(canvas.getByText('Full')).toBeInTheDocument();
-    await expect(canvas.getByRole('link', { name: /See in Fitssey/ })).toBeInTheDocument();
+    await expect(canvas.getByRole('link', { name: /Join the waiting list/ })).toBeInTheDocument();
   },
 };
 
@@ -83,7 +83,7 @@ export const Polish: Story = {
     level: 'Wszystkie poziomy',
     labels: {
       book: 'Zapisz się',
-      seeInBooking: 'Zobacz w Fitssey',
+      waitingList: 'Zapisz się na listę rezerwową',
       full: 'Brak miejsc',
       spotsLeft: (n) => `Wolne miejsca: ${n}`,
       fewSpotsLeft: (n) => (n === 1 ? 'Ostatnie miejsce!' : `Tylko ${n} wolne miejsca`),

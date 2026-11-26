@@ -106,9 +106,9 @@ export function ClassCard({
           external
           newTabLabel={labels.newTab}
           variant={isFull ? 'outline' : 'primary'}
-          aria-label={`${isFull ? labels.seeInBooking : labels.book}: ${title}, ${day} ${startTime} (${labels.newTab})`}
+          aria-label={`${isFull ? labels.waitingList : labels.book}: ${title}, ${day} ${startTime} (${labels.newTab})`}
         >
-          {isFull ? labels.seeInBooking : labels.book}
+          {isFull ? labels.waitingList : labels.book}
         </ButtonLink>
       </div>
     </article>

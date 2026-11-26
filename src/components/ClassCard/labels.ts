@@ -1,8 +1,8 @@
 export interface ClassCardLabels {
   /** Call to action when places are available. */
   book: string;
-  /** Call to action when the class is full. */
-  seeInBooking: string;
+  /** Call to action when the class is full: join the waiting list in Fitssey. */
+  waitingList: string;
   /** Status when no places are left. */
   full: string;
   /** Status text for available places. Receives the number of places left. */
@@ -18,7 +18,7 @@ export interface ClassCardLabels {
 /** English defaults. Pass Polish labels on Polish pages. */
 export const defaultClassCardLabels: ClassCardLabels = {
   book: 'Book',
-  seeInBooking: 'See in Fitssey',
+  waitingList: 'Join the waiting list',
   full: 'Full',
   spotsLeft: (n) => `${n} places left`,
   fewSpotsLeft: (n) => (n === 1 ? 'Last place!' : `Only ${n} places left`),
