@@ -45,7 +45,7 @@ npm run check:setup    # verify required tools are installed
 4. **Typography:** headings Josefin Sans, body DM Sans. Use typography tokens (`--font-role-*`, `--text-*`), not font names in components.
 5. **Never invent business facts** (prices, times, addresses, instructor names, class names). Use only `content/*.json`. If something is missing, stop and ask.
 6. **Booking is external.** "Book" actions link to Fitssey (`https://app.fitssey.com/findbalans`), open in a new tab, and show the portfolio notice. Never build booking or payment flows.
-7. **Responsive:** mobile first. Breakpoints (min-width): 480 / 768 / 1024 / 1280 px. CSS media queries cannot use variables, so write these numbers.
+7. **Responsive:** mobile first. Breakpoints (min-width): 480 / 768 / 1024 / 1280 px. CSS media queries cannot use variables, so write these numbers, in range syntax: `@media (width >= 768px)`.
 
 ## 5. Component contract (definition of done)
 

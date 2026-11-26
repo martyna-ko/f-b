@@ -1,0 +1,35 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as Stories from './Badge.stories';
+
+<Meta of={Stories} />
+
+# Badge
+
+**Purpose:** a small label that classifies content at a glance — who a class is for, its level or its status.
+
+<Canvas of={Stories.AllTones} />
+<Controls of={Stories.Kids} />
+
+## Anatomy
+
+Pill-shaped background · bold short label.
+
+## Tones
+
+| Tone      | Colour               | Use for                              |
+| --------- | -------------------- | ------------------------------------ |
+| `kids`    | Orange, black text   | Children's classes                   |
+| `family`  | Green, white text    | Family classes                       |
+| `adults`  | Violet, white text   | Adult classes                        |
+| `neutral` | Off-white, dark text | Level, status ("All levels", "Full") |
+
+## Usage
+
+- ✅ 1–3 words.
+- ✅ The same tone colours as the site map legend, so the meaning stays consistent.
+- ❌ Not clickable — for actions use Button.
+- ❌ Never rely on colour alone: the label text must say the audience ("Kids 7–10"), not just the colour.
+
+## Accessibility
+
+Plain text in a `<span>`, read normally by screen readers. All tone pairs are in the automatic contrast check.

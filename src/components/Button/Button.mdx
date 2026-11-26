@@ -1,0 +1,51 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as Stories from './Button.stories';
+
+<Meta of={Stories} />
+
+# Button and ButtonLink
+
+**Purpose:** the main way users act. `Button` performs an action on the page; `ButtonLink` navigates (to another page or to Fitssey).
+
+<Canvas of={Stories.Primary} />
+<Controls of={Stories.Primary} />
+
+## Anatomy
+
+Pill-shaped container (echoes the circle in the logo) · label · optional ↗ icon for external links.
+
+## Variants
+
+| Variant     | Use for                                    | Example      |
+| ----------- | ------------------------------------------ | ------------ |
+| `primary`   | The single most important action in a view | Book         |
+| `secondary` | A supporting action next to a primary one  | See schedule |
+| `outline`   | Low-emphasis actions                       | Show more    |
+
+<Canvas of={Stories.Secondary} />
+<Canvas of={Stories.Outline} />
+
+## Usage
+
+- ✅ One `primary` button per section.
+- ✅ Start labels with a verb: "Book", "See prices".
+- ✅ Use `ButtonLink external` for every Fitssey link — it opens a new tab and announces it to screen readers.
+- ❌ Don't use `Button` for navigation, or `ButtonLink` for actions.
+- ❌ Don't put white text on orange — the `secondary` variant uses black text for contrast.
+
+<Canvas of={Stories.ExternalBookingLink} />
+
+## States
+
+Default · hover (darker background) · keyboard focus (violet ring) · disabled (50% opacity, `Button` only).
+
+## Accessibility
+
+- Native `<button>` and `<a>` elements: keyboard and screen-reader support built in.
+- Minimum height 44px (touch target).
+- External links add hidden text "(opens in a new tab)" — pass `newTabLabel` in Polish on Polish pages.
+- Colour contrast is checked automatically by `npm run tokens:check`.
+
+## Responsive
+
+Inline by default. Use `fullWidth` on narrow screens or in cards.
