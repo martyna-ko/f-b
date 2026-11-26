@@ -9,4 +9,4 @@ Short records of important decisions: the context, the decision and its conseque
 | #                                      | Decision                             | Status   |
 | -------------------------------------- | ------------------------------------ | -------- |
 | [0001](./0001-technology-stack.md)     | Technology stack                     | Accepted |
-| [0002](./0002-oxlint-and-stylelint.md) | Oxlint + Stylelint instead of ESLint | Proposed |
+| [0002](./0002-oxlint-and-stylelint.md) | Oxlint + Stylelint instead of ESLint | Accepted |

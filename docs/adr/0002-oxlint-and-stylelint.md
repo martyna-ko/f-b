@@ -1,6 +1,6 @@
 # ADR 0002 — Oxlint for code, Stylelint for CSS (instead of ESLint)
 
-- **Status:** Proposed — needs Martyna's approval in PR #1
+- **Status:** Accepted (approved by Martyna in PR #1, 2026-11-25)
 - **Changes:** ADR 0001 planned ESLint
 
 ## Context
