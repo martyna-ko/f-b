@@ -1,0 +1,14 @@
+# Netlify build settings (read automatically when the repo is connected in Netlify).
+# Production: every merge to main. Deploy previews: every pull request.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# Single-page app: let React Router handle every URL (e.g. /kids, /pl/schedule).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
