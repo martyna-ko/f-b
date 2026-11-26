@@ -29,3 +29,6 @@ storybook-static
 # Storybook debug output
 debug-storybook.log
 coverage
+
+# Generated design tokens (run: npm run tokens)
+src/tokens/

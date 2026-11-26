@@ -30,19 +30,22 @@ Find Balans is an AI-native design system and website for a real movement studio
 npm install            # install dependencies
 npm run dev            # website at http://localhost:5173
 npm run storybook      # component library at http://localhost:6006
-npm run check          # typecheck + lint + css lint + format check + build — must pass before a PR
+npm run tokens         # build design tokens → src/tokens/ (runs automatically before dev, build, storybook, test)
+npm run tokens:check   # WCAG contrast check of semantic colour pairs
+npm run check          # typecheck + contrast + lint + css lint + format check + build — must pass before a PR
 npm run test           # component + accessibility tests (Storybook + Vitest, needs Playwright Chromium)
 npm run check:setup    # verify required tools are installed
 ```
 
 ## 4. Design rules
 
-1. **Use tokens, never raw values.** In component CSS use semantic or component tokens only: `var(--color-action-primary-bg)`. No hex colours, no named colours, no primitive tokens (`--color-violet-600`). Enforced by Stylelint.
+1. **Use tokens, never raw values.** In component CSS use semantic or component tokens only: `var(--color-action-primary-bg)`. No hex colours, no named colours, no primitive colour, font-family or font-size tokens (`--color-brand-violet-600`). Spacing (`--space-*`) and radius (`--radius-*`) may be used directly. Enforced by Stylelint. Token architecture: `tokens/README.md`.
 2. **Reuse before you create.** Check `src/components/` and Storybook first. Do not create a new component if an existing one with a new variant solves the need.
 3. **Orange (#FB9912) is never text on white** (contrast 2.17:1). Orange backgrounds always use black text.
-4. **Typography:** headings Josefin Sans, body DM Sans. Use typography tokens, not font names in components.
+4. **Typography:** headings Josefin Sans, body DM Sans. Use typography tokens (`--font-role-*`, `--text-*`), not font names in components.
 5. **Never invent business facts** (prices, times, addresses, instructor names, class names). Use only `content/*.json`. If something is missing, stop and ask.
 6. **Booking is external.** "Book" actions link to Fitssey (`https://app.fitssey.com/findbalans`), open in a new tab, and show the portfolio notice. Never build booking or payment flows.
+7. **Responsive:** mobile first. Breakpoints (min-width): 480 / 768 / 1024 / 1280 px. CSS media queries cannot use variables, so write these numbers.
 
 ## 5. Component contract (definition of done)
 
