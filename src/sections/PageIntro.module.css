@@ -42,6 +42,35 @@
   background: var(--color-audience-adults-surface);
 }
 
+/* Photo: mobile first — under the text, cropped to keep the subject (right side of the photo). */
+.withImage {
+  padding-bottom: 0;
+}
+
+.figure {
+  position: relative;
+  margin: var(--space-8) 0 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 80% center;
+}
+
+.caption {
+  position: absolute;
+  right: var(--space-2);
+  bottom: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-body-sm);
+  color: var(--color-text-muted);
+  background: var(--color-background-default);
+}
+
 @media (width >= 768px) {
   .intro {
     padding: var(--space-16) 0 var(--space-12);
@@ -53,5 +82,46 @@
 
   .large {
     font-size: var(--text-heading-display);
+  }
+
+  .withImage {
+    padding-bottom: 0;
+  }
+
+  .image {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* From 1024 px the photo fills the intro and the text sits on its empty left side. */
+@media (width >= 1024px) {
+  .withImage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    padding: var(--space-16) 0;
+  }
+
+  .withImage .inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .withImage .text {
+    max-width: 40%;
+  }
+
+  .withImage .figure {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+  }
+
+  .withImage .image {
+    height: 100%;
+    aspect-ratio: auto;
+    object-position: 70% center;
   }
 }

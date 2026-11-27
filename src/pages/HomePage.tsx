@@ -7,12 +7,26 @@ import { PageIntro } from '../sections/PageIntro';
 import { Section } from '../sections/Section';
 import list from '../sections/List.module.css';
 
+const HERO_SRCSET = [768, 1280, 1920, 2688]
+  .map((width) => `/images/home-hero-${width}.webp ${width}w`)
+  .join(', ');
+
 /** 1.0 Home — entry points for kids, family and adults. */
 export function HomePage() {
   const { t, to } = useLocale();
   return (
     <>
-      <PageIntro title={t.home.title} lead={t.home.lead} large>
+      <PageIntro
+        title={t.home.title}
+        lead={t.home.lead}
+        large
+        image={{
+          src: '/images/home-hero-1280.webp',
+          srcSet: HERO_SRCSET,
+          alt: t.home.heroImageAlt,
+          caption: t.common.aiImage,
+        }}
+      >
         <ButtonLink href={studio.studio.bookingUrl} external newTabLabel={t.common.opensInNewTab}>
           {t.common.bookIn}
         </ButtonLink>

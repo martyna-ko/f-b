@@ -45,7 +45,8 @@
       "all": "Wszystkie"
     },
     "perClass": "za zajęcia",
-    "bookIn": "Zapisz się w Fitssey"
+    "bookIn": "Zapisz się w Fitssey",
+    "aiImage": "Zdjęcie wygenerowane przez AI"
   },
   "home": {
     "title": "Pasja, energia i moc każdego dnia",
@@ -72,7 +73,8 @@
       "Duży, darmowy parking",
       "Wygodny dojazd bez korków i stresu"
     ],
-    "ctaSchedule": "Zobacz grafik"
+    "ctaSchedule": "Zobacz grafik",
+    "heroImageAlt": "Kobieta siedzi zrelaksowana w czarnym hamaku w jasnym, minimalistycznym studiu; w tle koło aerial i palma."
   },
   "kids": {
     "title": "Zajęcia dla dzieci",
