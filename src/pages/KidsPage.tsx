@@ -1,6 +1,7 @@
 import { Accordion } from '../components/Accordion';
 import { ButtonLink } from '../components/Button';
 import { studio, weeklySchedule } from '../content';
+import { images } from '../images';
 import { useLocale } from '../i18n/locale';
 import { ClassGrid } from '../sections/ClassGrid';
 import { PageIntro } from '../sections/PageIntro';
@@ -12,7 +13,12 @@ export function KidsPage() {
   const { t } = useLocale();
   return (
     <>
-      <PageIntro title={t.kids.title} lead={t.kids.lead} tone="kids" />
+      <PageIntro
+        title={t.kids.title}
+        lead={t.kids.lead}
+        tone="kids"
+        image={{ ...images.kidsIntro, alt: t.kids.introImageAlt, caption: t.common.aiImage }}
+      />
       <Section title={t.kids.classesTitle}>
         <ClassGrid entries={weeklySchedule('kids')} />
       </Section>

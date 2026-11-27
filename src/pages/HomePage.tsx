@@ -1,15 +1,12 @@
 import { ButtonLink } from '../components/Button';
 import { studio } from '../content';
+import { images } from '../images';
 import { useLocale } from '../i18n/locale';
 import { RouterLink } from '../i18n/RouterLink';
 import { AudiencePaths } from '../sections/AudiencePaths';
 import { PageIntro } from '../sections/PageIntro';
 import { Section } from '../sections/Section';
 import list from '../sections/List.module.css';
-
-const HERO_SRCSET = [768, 1280, 1920, 2688]
-  .map((width) => `/images/home-hero-${width}.webp ${width}w`)
-  .join(', ');
 
 /** 1.0 Home — entry points for kids, family and adults. */
 export function HomePage() {
@@ -20,9 +17,9 @@ export function HomePage() {
         title={t.home.title}
         lead={t.home.lead}
         large
+        imageLayout="background"
         image={{
-          src: '/images/home-hero-1280.webp',
-          srcSet: HERO_SRCSET,
+          ...images.homeHero,
           alt: t.home.heroImageAlt,
           caption: t.common.aiImage,
         }}

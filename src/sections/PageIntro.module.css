@@ -42,11 +42,7 @@
   background: var(--color-audience-adults-surface);
 }
 
-/* Photo: mobile first — under the text, cropped to keep the subject (right side of the photo). */
-.withImage {
-  padding-bottom: 0;
-}
-
+/* Photo, mobile first: always under the text. */
 .figure {
   position: relative;
   margin: var(--space-8) 0 0;
@@ -57,7 +53,6 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  object-position: 80% center;
 }
 
 .caption {
@@ -69,6 +64,27 @@
   font-size: var(--text-body-sm);
   color: var(--color-text-muted);
   background: var(--color-background-default);
+}
+
+.side .image {
+  border-radius: var(--radius-lg);
+}
+
+/* Background layout on small screens: photo runs edge to edge, cropped to the subject. */
+.background {
+  padding-bottom: 0;
+}
+
+.background .inner {
+  padding: 0;
+}
+
+.background .text {
+  padding: 0 var(--space-4);
+}
+
+.background .image {
+  object-position: 80% center;
 }
 
 @media (width >= 768px) {
@@ -84,18 +100,34 @@
     font-size: var(--text-heading-display);
   }
 
-  .withImage {
+  .background {
     padding-bottom: 0;
   }
 
-  .image {
+  .background .text {
+    padding: 0 var(--space-8);
+  }
+
+  .background .image {
     aspect-ratio: 16 / 9;
   }
 }
 
-/* From 1024 px the photo fills the intro and the text sits on its empty left side. */
 @media (width >= 1024px) {
-  .withImage {
+  /* Side: text left, photo right. */
+  .side .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+  }
+
+  .side .figure {
+    margin: 0;
+  }
+
+  /* Background: photo fills the intro, text sits on its empty left side. */
+  .background {
     position: relative;
     display: flex;
     align-items: center;
@@ -103,23 +135,25 @@
     padding: var(--space-16) 0;
   }
 
-  .withImage .inner {
+  .background .inner {
+    width: 100%;
+    padding: 0 var(--space-8);
+  }
+
+  .background .text {
     position: relative;
     z-index: 1;
-    width: 100%;
-  }
-
-  .withImage .text {
     max-width: 40%;
+    padding: 0;
   }
 
-  .withImage .figure {
+  .background .figure {
     position: absolute;
     inset: 0;
     margin: 0;
   }
 
-  .withImage .image {
+  .background .image {
     height: 100%;
     aspect-ratio: auto;
     object-position: 70% center;
