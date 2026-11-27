@@ -1,5 +1,6 @@
 import { ButtonLink } from '../components/Button';
 import { studio } from '../content';
+import { images } from '../images';
 import { useLocale } from '../i18n/locale';
 import { RouterLink } from '../i18n/RouterLink';
 import { AudiencePaths } from '../sections/AudiencePaths';
@@ -12,7 +13,17 @@ export function HomePage() {
   const { t, to } = useLocale();
   return (
     <>
-      <PageIntro title={t.home.title} lead={t.home.lead} large>
+      <PageIntro
+        title={t.home.title}
+        lead={t.home.lead}
+        large
+        imageLayout="background"
+        image={{
+          ...images.homeHero,
+          alt: t.home.heroImageAlt,
+          caption: t.common.aiImage,
+        }}
+      >
         <ButtonLink href={studio.studio.bookingUrl} external newTabLabel={t.common.opensInNewTab}>
           {t.common.bookIn}
         </ButtonLink>

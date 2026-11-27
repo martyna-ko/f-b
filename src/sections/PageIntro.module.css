@@ -42,6 +42,51 @@
   background: var(--color-audience-adults-surface);
 }
 
+/* Photo, mobile first: always under the text. */
+.figure {
+  position: relative;
+  margin: var(--space-8) 0 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  right: var(--space-2);
+  bottom: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-body-sm);
+  color: var(--color-text-muted);
+  background: var(--color-background-default);
+}
+
+.side .image {
+  border-radius: var(--radius-lg);
+}
+
+/* Background layout on small screens: photo runs edge to edge, cropped to the subject. */
+.background {
+  padding-bottom: 0;
+}
+
+.background .inner {
+  padding: 0;
+}
+
+.background .text {
+  padding: 0 var(--space-4);
+}
+
+.background .image {
+  object-position: 80% center;
+}
+
 @media (width >= 768px) {
   .intro {
     padding: var(--space-16) 0 var(--space-12);
@@ -53,5 +98,64 @@
 
   .large {
     font-size: var(--text-heading-display);
+  }
+
+  .background {
+    padding-bottom: 0;
+  }
+
+  .background .text {
+    padding: 0 var(--space-8);
+  }
+
+  .background .image {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (width >= 1024px) {
+  /* Side: text left, photo right. */
+  .side .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+  }
+
+  .side .figure {
+    margin: 0;
+  }
+
+  /* Background: photo fills the intro, text sits on its empty left side. */
+  .background {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    padding: var(--space-16) 0;
+  }
+
+  .background .inner {
+    width: 100%;
+    padding: 0 var(--space-8);
+  }
+
+  .background .text {
+    position: relative;
+    z-index: 1;
+    max-width: 40%;
+    padding: 0;
+  }
+
+  .background .figure {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+  }
+
+  .background .image {
+    height: 100%;
+    aspect-ratio: auto;
+    object-position: 70% center;
   }
 }

@@ -45,7 +45,8 @@
       "all": "All"
     },
     "perClass": "per class",
-    "bookIn": "Book in Fitssey"
+    "bookIn": "Book in Fitssey",
+    "aiImage": "Image generated with AI"
   },
   "home": {
     "title": "Passion, energy and strength every day",
@@ -72,7 +73,8 @@
       "Large free car park",
       "Easy to reach, without traffic jams"
     ],
-    "ctaSchedule": "See the schedule"
+    "ctaSchedule": "See the schedule",
+    "heroImageAlt": "A woman sits relaxed in a black aerial hammock in a bright, minimal studio, with an aerial hoop and a palm in the background."
   },
   "kids": {
     "title": "Classes for kids",
@@ -92,7 +94,8 @@
     "enrolOrder": "Places are given in order of applications.",
     "enrolCta": "Enrol in Fitssey",
     "classesTitle": "Groups this season",
-    "faqTitle": "Questions from parents"
+    "faqTitle": "Questions from parents",
+    "introImageAlt": "A laughing girl hangs upside down in a black aerial hammock while a smiling boy flies like a superhero in another, both above a large black safety mat."
   },
   "family": {
     "title": "Family classes",
