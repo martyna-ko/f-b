@@ -4,7 +4,8 @@ All photos on the site are **generated with AI** (Higgsfield) for this portfolio
 
 ## Rules
 
-- No recognisable children's faces (children seen from behind or in motion blur).
+- Children's faces may be shown: every person in the images is AI-generated, not a real child (decision by Martyna, 2026-11-27).
+- Poses must be simple, with clear contact between body and equipment (e.g. fabric only under the hips), to avoid AI errors such as limbs passing through fabric.
 - One shared studio description in every prompt, so all images look like the same room.
 - No text or logos inside images.
 - Alt text and the AI caption live in `content/en.json` and `content/pl.json`, never in components.
