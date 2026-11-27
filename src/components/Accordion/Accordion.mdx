@@ -1,0 +1,29 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as Stories from './Accordion.stories';
+
+<Meta of={Stories} />
+
+# Accordion
+
+**Purpose:** answers common questions without making the page long — used for the FAQ on the kids page.
+
+<Canvas of={Stories.OneOpen} />
+<Controls of={Stories.Collapsed} />
+
+## Anatomy
+
+Question row (text + plus/minus icon) · answer panel · divider.
+
+## States
+
+Collapsed · expanded (icon becomes minus) · keyboard focus (violet ring).
+
+## Usage
+
+- ✅ Questions users really ask (from user flows: age, cancellations, parking, height requirement, full classes).
+- ✅ Short answers; link out for detail.
+- ❌ Don't hide information needed to decide or book (prices, times, requirements) — show those on the page.
+
+## Accessibility
+
+Native `<details>`/`<summary>`: focusable, opens with Enter or Space, announced as expandable by screen readers, works without JavaScript. Touch target ≥ 44px.

@@ -1,0 +1,31 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as Stories from './PricingCard.stories';
+
+<Meta of={Stories} />
+
+# PricingCard
+
+**Purpose:** shows one price option clearly — who it is for, how much, and what it covers (user flow step "Pricing").
+
+<Canvas of={Stories.Highlighted} />
+<Controls of={Stories.Kids} />
+
+## Anatomy
+
+Audience badge · optional highlight badge · option name · price (large, heading font) · what it covers.
+
+## Variants
+
+<Canvas of={Stories.Family} />
+<Canvas of={Stories.Adults} />
+
+## Usage
+
+- ✅ Prices come only from `content/studio.json` — never type a price in a page.
+- ✅ Highlight at most one option per audience.
+- ✅ Always say what the price covers ("per month", "valid 1 month").
+- ❌ No "Buy" button — payment happens in Fitssey. Put one booking link under the price list.
+
+## Accessibility
+
+`<article>` with an `<h3>`, so screen-reader users can move between options. The highlight is a text label, not colour only.
