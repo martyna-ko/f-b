@@ -17,7 +17,9 @@
     "menu": "Menu",
     "closeMenu": "Zamknij menu",
     "language": "Język",
-    "skipToContent": "Przejdź do treści"
+    "skipToContent": "Przejdź do treści",
+    "mainLabel": "Główna",
+    "homeLabel": "Find Balans — strona główna"
   },
   "common": {
     "opensInNewTab": "otwiera się w nowej karcie",
@@ -36,7 +38,14 @@
       "sat": "Sobota",
       "sun": "Niedziela"
     },
-    "audiences": { "kids": "Dzieci", "family": "Rodzinne", "adults": "Dorośli", "all": "Wszystkie" }
+    "audiences": {
+      "kids": "Dzieci",
+      "family": "Rodzinne",
+      "adults": "Dorośli",
+      "all": "Wszystkie"
+    },
+    "perClass": "za zajęcia",
+    "bookIn": "Zapisz się w Fitssey"
   },
   "home": {
     "title": "Pasja, energia i moc każdego dnia",
@@ -47,7 +56,10 @@
         "title": "Dla dzieci",
         "text": "Grupy zamknięte dla dzieci 5–14 lat: hamaki i taniec, ze stałym miejscem na cały sezon."
       },
-      "family": { "title": "Rodzinne", "text": "Hamaki dla dzieci 5+ razem z dorosłym." },
+      "family": {
+        "title": "Rodzinne",
+        "text": "Hamaki dla dzieci 5+ razem z dorosłym."
+      },
       "adults": {
         "title": "Dla dorosłych",
         "text": "Koła, hamaki i handstand. Zapraszamy na każdym poziomie."
@@ -59,7 +71,8 @@
       "Ciepła i przyjazna atmosfera",
       "Duży, darmowy parking",
       "Wygodny dojazd bez korków i stresu"
-    ]
+    ],
+    "ctaSchedule": "Zobacz grafik"
   },
   "kids": {
     "title": "Zajęcia dla dzieci",
@@ -75,7 +88,8 @@
     "enrolEmail": "Możesz też zapisać dziecko mailowo: findbalans@gmail.com, tytuł wiadomości „Zapisy”.",
     "enrolOrder": "O miejscu decyduje kolejność zgłoszeń.",
     "enrolCta": "Zapisz się w Fitssey",
-    "classesTitle": "Grupy w tym sezonie"
+    "classesTitle": "Grupy w tym sezonie",
+    "faqTitle": "Pytania rodziców"
   },
   "family": {
     "title": "Zajęcia rodzinne",
@@ -107,8 +121,14 @@
   "events": {
     "title": "Wydarzenia",
     "lead": "Świętuj z nami.",
-    "birthdays": { "title": "Urodziny", "text": "Przyjęcia urodzinowe w studio w weekendy." },
-    "photo": { "title": "Sesje zdjęciowe", "text": "Sesje zdjęciowe w studio." },
+    "birthdays": {
+      "title": "Urodziny",
+      "text": "Przyjęcia urodzinowe w studio w weekendy."
+    },
+    "photo": {
+      "title": "Sesje zdjęciowe",
+      "text": "Sesje zdjęciowe w studio."
+    },
     "ask": "Zapytaj o terminy i szczegóły: findbalans@gmail.com"
   },
   "visit": {
@@ -116,7 +136,9 @@
     "addressTitle": "Adres",
     "parkingTitle": "Parking",
     "contactTitle": "Kontakt",
-    "mapLink": "Otwórz w Mapach Google"
+    "mapLink": "Otwórz w Mapach Google",
+    "emailLabel": "E-mail",
+    "followTitle": "Obserwuj nas"
   },
   "faq": {
     "title": "Najczęstsze pytania",
@@ -129,8 +151,14 @@
         "q": "Co jeśli zajęcia zostaną odwołane?",
         "a": "Zajęcia odwołane przez nas zawsze odrabiamy."
       },
-      { "q": "Czy jest parking?", "a": "Tak — duży, darmowy parking." },
-      { "q": "Czy na koła jest jakiś wymóg?", "a": "Tak, minimalny wzrost 140 cm." },
+      {
+        "q": "Czy jest parking?",
+        "a": "Tak — duży, darmowy parking."
+      },
+      {
+        "q": "Czy na koła jest jakiś wymóg?",
+        "a": "Tak, minimalny wzrost 140 cm."
+      },
       {
         "q": "Co jeśli nie ma wolnych miejsc?",
         "a": "Możesz zapisać się na listę rezerwową w Fitssey."
@@ -140,5 +168,10 @@
   "footer": {
     "follow": "Obserwuj nas",
     "rights": "Find Balans"
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony",
+    "text": "Ta strona nie istnieje.",
+    "back": "Przejdź na stronę główną"
   }
 }

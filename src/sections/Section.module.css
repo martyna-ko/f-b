@@ -1,0 +1,43 @@
+.section {
+  padding: var(--space-12) 0;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.title {
+  margin-bottom: var(--space-6);
+}
+
+.default {
+  background: var(--color-background-default);
+}
+
+.subtle {
+  background: var(--color-background-subtle);
+}
+
+.kids {
+  background: var(--color-audience-kids-surface);
+}
+
+.family {
+  background: var(--color-audience-family-surface);
+}
+
+.adults {
+  background: var(--color-audience-adults-surface);
+}
+
+@media (width >= 768px) {
+  .section {
+    padding: var(--space-16) 0;
+  }
+
+  .inner {
+    padding: 0 var(--space-8);
+  }
+}
