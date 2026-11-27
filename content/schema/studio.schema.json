@@ -80,7 +80,7 @@
               "$ref": "#/$defs/localized"
             },
             "city": {
-              "type": "string"
+              "$ref": "#/$defs/localized"
             },
             "postcode": {
               "type": "string"

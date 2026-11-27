@@ -29,6 +29,11 @@
         "$type": "dimension",
         "$value": "{font.size.500}",
         "$description": "Card and subsection title (h3)."
+      },
+      "display": {
+        "$type": "dimension",
+        "$value": "{font.size.800}",
+        "$description": "Home page hero title (56px), from 768px wide only."
       }
     },
     "body": {

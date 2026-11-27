@@ -1,4 +1,4 @@
-import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from 'react';
+import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ComponentType, ReactNode } from 'react';
 import styles from './Button.module.css';
 
 export type ButtonVariant = 'primary' | 'secondary' | 'outline';
@@ -29,6 +29,11 @@ export interface ButtonLinkProps
   external?: boolean;
   /** Screen-reader text added to external links. Translate it for Polish pages. */
   newTabLabel?: string;
+  /**
+   * Link component for internal links, e.g. a router link, so navigation does not reload the page.
+   * Ignored for external links.
+   */
+  linkComponent?: ComponentType<{ href: string; className?: string; children: ReactNode }>;
 }
 
 const cx = (...c: (string | false | undefined)[]) => c.filter(Boolean).join(' ');
@@ -65,13 +70,22 @@ export function ButtonLink({
   fullWidth = false,
   external = false,
   newTabLabel = 'opens in a new tab',
+  linkComponent: LinkComponent,
   className,
   children,
   ...rest
 }: ButtonLinkProps) {
+  const classes = cx(styles.button, styles[variant], fullWidth && styles.fullWidth, className);
+  if (LinkComponent && !external) {
+    return (
+      <LinkComponent href={rest.href} className={classes}>
+        {children}
+      </LinkComponent>
+    );
+  }
   return (
     <a
-      className={cx(styles.button, styles[variant], fullWidth && styles.fullWidth, className)}
+      className={classes}
       {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       {...rest}
     >

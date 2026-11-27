@@ -1,0 +1,58 @@
+.paths {
+  display: grid;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: block;
+  height: 100%;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border-top: 6px solid transparent;
+  color: var(--color-text-default);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 150ms ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 3px;
+}
+
+.kids {
+  background: var(--color-audience-kids-surface);
+  border-top-color: var(--color-audience-kids-accent);
+}
+
+.family {
+  background: var(--color-audience-family-surface);
+  border-top-color: var(--color-audience-family-accent);
+}
+
+.adults {
+  background: var(--color-audience-adults-surface);
+  border-top-color: var(--color-audience-adults-accent);
+}
+
+.title {
+  margin-bottom: var(--space-2);
+}
+
+.text {
+  margin: 0;
+}
+
+@media (width >= 768px) {
+  .paths {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+  }
+}

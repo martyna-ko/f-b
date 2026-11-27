@@ -17,7 +17,7 @@ A design system, component library and responsive website for **Find Balans**, a
 
 ## Run it locally
 
-Requires **Node.js 22.12+** and **Git**. Check with `npm run check:setup`.
+Requires **Node.js 22.22+** and **Git**. Check with `npm run check:setup`.
 
 ```bash
 git clone https://github.com/martyna-ko/find-balans.git

@@ -17,7 +17,9 @@
     "menu": "Menu",
     "closeMenu": "Close menu",
     "language": "Language",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "mainLabel": "Main",
+    "homeLabel": "Find Balans — home"
   },
   "common": {
     "opensInNewTab": "opens in a new tab",
@@ -36,7 +38,14 @@
       "sat": "Saturday",
       "sun": "Sunday"
     },
-    "audiences": { "kids": "Kids", "family": "Family", "adults": "Adults", "all": "All" }
+    "audiences": {
+      "kids": "Kids",
+      "family": "Family",
+      "adults": "Adults",
+      "all": "All"
+    },
+    "perClass": "per class",
+    "bookIn": "Book in Fitssey"
   },
   "home": {
     "title": "Passion, energy and strength every day",
@@ -62,7 +71,8 @@
       "A warm, friendly atmosphere",
       "Large free car park",
       "Easy to reach, without traffic jams"
-    ]
+    ],
+    "ctaSchedule": "See the schedule"
   },
   "kids": {
     "title": "Classes for kids",
@@ -81,7 +91,8 @@
     "enrolEmail": "You can also enrol by email: findbalans@gmail.com, subject “Zapisy”.",
     "enrolOrder": "Places are given in order of applications.",
     "enrolCta": "Enrol in Fitssey",
-    "classesTitle": "Groups this season"
+    "classesTitle": "Groups this season",
+    "faqTitle": "Questions from parents"
   },
   "family": {
     "title": "Family classes",
@@ -117,7 +128,10 @@
       "title": "Birthday parties",
       "text": "Birthday parties at the studio at weekends."
     },
-    "photo": { "title": "Photo sessions", "text": "Photo sessions in the studio." },
+    "photo": {
+      "title": "Photo sessions",
+      "text": "Photo sessions in the studio."
+    },
     "ask": "Ask us about dates and details: findbalans@gmail.com"
   },
   "visit": {
@@ -125,23 +139,42 @@
     "addressTitle": "Address",
     "parkingTitle": "Parking",
     "contactTitle": "Contact",
-    "mapLink": "Open in Google Maps"
+    "mapLink": "Open in Google Maps",
+    "emailLabel": "Email",
+    "followTitle": "Follow us"
   },
   "faq": {
     "title": "Frequently asked questions",
     "items": [
-      { "q": "Does my child need experience?", "a": "No. All groups are open to all levels." },
+      {
+        "q": "Does my child need experience?",
+        "a": "No. All groups are open to all levels."
+      },
       {
         "q": "What happens if a class is cancelled?",
         "a": "If we cancel a class, we always make it up."
       },
-      { "q": "Is there parking?", "a": "Yes — a large free car park." },
-      { "q": "Is there a requirement for aerial hoop?", "a": "Yes, minimum height 140 cm." },
-      { "q": "What if a class is full?", "a": "You can join the waiting list in Fitssey." }
+      {
+        "q": "Is there parking?",
+        "a": "Yes — a large free car park."
+      },
+      {
+        "q": "Is there a requirement for aerial hoop?",
+        "a": "Yes, minimum height 140 cm."
+      },
+      {
+        "q": "What if a class is full?",
+        "a": "You can join the waiting list in Fitssey."
+      }
     ]
   },
   "footer": {
     "follow": "Follow us",
     "rights": "Find Balans"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "This page does not exist.",
+    "back": "Go to the home page"
   }
 }
