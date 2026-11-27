@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "lang": "pl",
+    "siteTitle": "Find Balans — zajęcia na hamakach, kołach i taniec na Bemowie",
+    "portfolioNotice": "Projekt portfolio (case study). Treści dotyczą sezonu 2026/27. Linki do zapisów otwierają prawdziwy system rezerwacji studia (Fitssey)."
+  },
+  "nav": {
+    "home": "Start",
+    "kids": "Dla dzieci",
+    "family": "Rodzinne",
+    "adults": "Dla dorosłych",
+    "schedule": "Grafik",
+    "pricing": "Cennik",
+    "events": "Wydarzenia",
+    "visit": "Dojazd i kontakt",
+    "book": "Zapisz się",
+    "menu": "Menu",
+    "closeMenu": "Zamknij menu",
+    "language": "Język",
+    "skipToContent": "Przejdź do treści"
+  },
+  "common": {
+    "opensInNewTab": "otwiera się w nowej karcie",
+    "allLevels": "Wszystkie poziomy",
+    "with": "Prowadzi",
+    "book": "Zapisz się",
+    "waitingList": "Zapisz się na listę rezerwową",
+    "full": "Brak miejsc",
+    "currency": "zł",
+    "days": {
+      "mon": "Poniedziałek",
+      "tue": "Wtorek",
+      "wed": "Środa",
+      "thu": "Czwartek",
+      "fri": "Piątek",
+      "sat": "Sobota",
+      "sun": "Niedziela"
+    },
+    "audiences": { "kids": "Dzieci", "family": "Rodzinne", "adults": "Dorośli", "all": "Wszystkie" }
+  },
+  "home": {
+    "title": "Pasja, energia i moc każdego dnia",
+    "lead": "Hamaki, koła, taniec i handstand dla dzieci, rodzin i dorosłych — w kameralnych grupach, na warszawskim Bemowie.",
+    "pathsTitle": "Dla kogo są zajęcia?",
+    "paths": {
+      "kids": {
+        "title": "Dla dzieci",
+        "text": "Grupy zamknięte dla dzieci 5–14 lat: hamaki i taniec, ze stałym miejscem na cały sezon."
+      },
+      "family": { "title": "Rodzinne", "text": "Hamaki dla dzieci 5+ razem z dorosłym." },
+      "adults": {
+        "title": "Dla dorosłych",
+        "text": "Koła, hamaki i handstand. Zapraszamy na każdym poziomie."
+      }
+    },
+    "whyTitle": "Dlaczego Find Balans",
+    "why": [
+      "Kameralne grupy i indywidualne podejście",
+      "Ciepła i przyjazna atmosfera",
+      "Duży, darmowy parking",
+      "Wygodny dojazd bez korków i stresu"
+    ]
+  },
+  "kids": {
+    "title": "Zajęcia dla dzieci",
+    "lead": "Grupy zamknięte na sezon 2026/27 (wrzesień – czerwiec): hamaki dla dzieci 5–6, 7–10 i 11–14 lat oraz taniec.",
+    "benefitsTitle": "Jak działają grupy zamknięte",
+    "benefits": [
+      "Stałe miejsce dla dziecka na cały sezon — koniec z potwierdzaniem i odwoływaniem zajęć",
+      "Dwie opcje płatności: 330 zł miesięcznie lub 600 zł za 2 miesiące z góry",
+      "Zajęcia odwołane przez nas? Zawsze odrabiamy!"
+    ],
+    "enrolTitle": "Jak zapisać dziecko",
+    "enrolSteps": ["Załóż konto dla dziecka w Fitssey.", "Zarezerwuj miejsce w wybranej grupie."],
+    "enrolEmail": "Możesz też zapisać dziecko mailowo: findbalans@gmail.com, tytuł wiadomości „Zapisy”.",
+    "enrolOrder": "O miejscu decyduje kolejność zgłoszeń.",
+    "enrolCta": "Zapisz się w Fitssey",
+    "classesTitle": "Grupy w tym sezonie"
+  },
+  "family": {
+    "title": "Zajęcia rodzinne",
+    "lead": "Otwarte zajęcia na hamakach dla dzieci i dorosłych razem.",
+    "rulesTitle": "Kto może przyjść",
+    "rules": [
+      "Dzieci od 5 lat — bez górnej granicy wieku",
+      "Z rodzicem, innym członkiem rodziny lub dowolnym dorosłym opiekunem",
+      "Może przyjść kilkoro dorosłych i kilkoro dzieci razem"
+    ],
+    "classesTitle": "Kiedy"
+  },
+  "adults": {
+    "title": "Zajęcia dla dorosłych",
+    "lead": "Koła, hamaki i handstand w kameralnych grupach. Zapraszamy na każdym poziomie.",
+    "classesTitle": "Zajęcia w tym sezonie"
+  },
+  "schedule": {
+    "title": "Grafik tygodniowy",
+    "lead": "Typowy tydzień w sezonie 2026/27. Zapisy i aktualne wolne miejsca w Fitssey.",
+    "filterLabel": "Pokaż zajęcia dla",
+    "empty": "Brak zajęć dla tej grupy w tym dniu."
+  },
+  "pricing": {
+    "title": "Cennik",
+    "lead": "Ceny w złotych. Płatność i zapisy w Fitssey.",
+    "recommended": "Najkorzystniej"
+  },
+  "events": {
+    "title": "Wydarzenia",
+    "lead": "Świętuj z nami.",
+    "birthdays": { "title": "Urodziny", "text": "Przyjęcia urodzinowe w studio w weekendy." },
+    "photo": { "title": "Sesje zdjęciowe", "text": "Sesje zdjęciowe w studio." },
+    "ask": "Zapytaj o terminy i szczegóły: findbalans@gmail.com"
+  },
+  "visit": {
+    "title": "Dojazd i kontakt",
+    "addressTitle": "Adres",
+    "parkingTitle": "Parking",
+    "contactTitle": "Kontakt",
+    "mapLink": "Otwórz w Mapach Google"
+  },
+  "faq": {
+    "title": "Najczęstsze pytania",
+    "items": [
+      {
+        "q": "Czy dziecko musi mieć doświadczenie?",
+        "a": "Nie. Wszystkie grupy są otwarte dla każdego poziomu."
+      },
+      {
+        "q": "Co jeśli zajęcia zostaną odwołane?",
+        "a": "Zajęcia odwołane przez nas zawsze odrabiamy."
+      },
+      { "q": "Czy jest parking?", "a": "Tak — duży, darmowy parking." },
+      { "q": "Czy na koła jest jakiś wymóg?", "a": "Tak, minimalny wzrost 140 cm." },
+      {
+        "q": "Co jeśli nie ma wolnych miejsc?",
+        "a": "Możesz zapisać się na listę rezerwową w Fitssey."
+      }
+    ]
+  },
+  "footer": {
+    "follow": "Obserwuj nas",
+    "rights": "Find Balans"
+  }
+}

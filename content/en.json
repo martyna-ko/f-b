@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "lang": "en",
+    "siteTitle": "Find Balans — aerial and dance classes in Bemowo, Warsaw",
+    "portfolioNotice": "Portfolio case study. Content reflects the 2026/27 season. Booking links open the studio's real booking system (Fitssey)."
+  },
+  "nav": {
+    "home": "Home",
+    "kids": "For kids",
+    "family": "Family",
+    "adults": "For adults",
+    "schedule": "Schedule",
+    "pricing": "Pricing",
+    "events": "Events",
+    "visit": "Visit & contact",
+    "book": "Book",
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "common": {
+    "opensInNewTab": "opens in a new tab",
+    "allLevels": "All levels",
+    "with": "With",
+    "book": "Book",
+    "waitingList": "Join the waiting list",
+    "full": "Full",
+    "currency": "zł",
+    "days": {
+      "mon": "Monday",
+      "tue": "Tuesday",
+      "wed": "Wednesday",
+      "thu": "Thursday",
+      "fri": "Friday",
+      "sat": "Saturday",
+      "sun": "Sunday"
+    },
+    "audiences": { "kids": "Kids", "family": "Family", "adults": "Adults", "all": "All" }
+  },
+  "home": {
+    "title": "Passion, energy and strength every day",
+    "lead": "Aerial hammocks, aerial hoop, dance and handstand for children, families and adults — in small groups, in Bemowo, Warsaw.",
+    "pathsTitle": "Who are the classes for?",
+    "paths": {
+      "kids": {
+        "title": "For kids",
+        "text": "Closed groups for ages 5–14: aerial hammocks and dance, with a fixed place for the whole season."
+      },
+      "family": {
+        "title": "Family",
+        "text": "Aerial hammocks for children 5+ together with an adult."
+      },
+      "adults": {
+        "title": "For adults",
+        "text": "Aerial hoop, aerial hammocks and handstand. All levels welcome."
+      }
+    },
+    "whyTitle": "Why Find Balans",
+    "why": [
+      "Small groups and an individual approach",
+      "A warm, friendly atmosphere",
+      "Large free car park",
+      "Easy to reach, without traffic jams"
+    ]
+  },
+  "kids": {
+    "title": "Classes for kids",
+    "lead": "Closed groups for the 2026/27 season (September – June): aerial hammocks for ages 5–6, 7–10 and 11–14, and dance.",
+    "benefitsTitle": "How closed groups work",
+    "benefits": [
+      "A fixed place for your child for the whole season — no confirming or cancelling each class",
+      "Two payment options: 330 zł per month or 600 zł every 2 months",
+      "If we cancel a class, we always make it up"
+    ],
+    "enrolTitle": "How to enrol",
+    "enrolSteps": [
+      "Create an account for your child in Fitssey.",
+      "Book a place in the chosen group."
+    ],
+    "enrolEmail": "You can also enrol by email: findbalans@gmail.com, subject “Zapisy”.",
+    "enrolOrder": "Places are given in order of applications.",
+    "enrolCta": "Enrol in Fitssey",
+    "classesTitle": "Groups this season"
+  },
+  "family": {
+    "title": "Family classes",
+    "lead": "Open aerial hammock classes for children and adults together.",
+    "rulesTitle": "Who can come",
+    "rules": [
+      "Children aged 5 and older — no upper age limit",
+      "With a parent, another family member or any adult in charge of the child",
+      "Several adults and several children can come together"
+    ],
+    "classesTitle": "When"
+  },
+  "adults": {
+    "title": "Classes for adults",
+    "lead": "Aerial hoop, aerial hammocks and handstand in small groups. All levels welcome.",
+    "classesTitle": "Classes this season"
+  },
+  "schedule": {
+    "title": "Weekly schedule",
+    "lead": "Typical week in the 2026/27 season. Booking and current places are in Fitssey.",
+    "filterLabel": "Show classes for",
+    "empty": "No classes for this group on this day."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "lead": "All prices in Polish złoty. Payment and booking in Fitssey.",
+    "recommended": "Best value"
+  },
+  "events": {
+    "title": "Events",
+    "lead": "Celebrate with us.",
+    "birthdays": {
+      "title": "Birthday parties",
+      "text": "Birthday parties at the studio at weekends."
+    },
+    "photo": { "title": "Photo sessions", "text": "Photo sessions in the studio." },
+    "ask": "Ask us about dates and details: findbalans@gmail.com"
+  },
+  "visit": {
+    "title": "Visit & contact",
+    "addressTitle": "Address",
+    "parkingTitle": "Parking",
+    "contactTitle": "Contact",
+    "mapLink": "Open in Google Maps"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      { "q": "Does my child need experience?", "a": "No. All groups are open to all levels." },
+      {
+        "q": "What happens if a class is cancelled?",
+        "a": "If we cancel a class, we always make it up."
+      },
+      { "q": "Is there parking?", "a": "Yes — a large free car park." },
+      { "q": "Is there a requirement for aerial hoop?", "a": "Yes, minimum height 140 cm." },
+      { "q": "What if a class is full?", "a": "You can join the waiting list in Fitssey." }
+    ]
+  },
+  "footer": {
+    "follow": "Follow us",
+    "rights": "Find Balans"
+  }
+}

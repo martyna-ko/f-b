@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://find-balans/content/schema/studio.schema.json",
+  "title": "Find Balans studio data",
+  "description": "Business facts for the website: classes, weekly schedule, prices, studio details. Facts are approved by a human; agents must not invent or change them without approval.",
+  "type": "object",
+  "required": ["season", "studio", "classTypes", "schedule", "prices"],
+  "additionalProperties": false,
+  "$defs": {
+    "localized": {
+      "description": "Text in both site languages.",
+      "type": "object",
+      "required": ["en", "pl"],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pl": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "audience": {
+      "enum": ["kids", "family", "adults"]
+    },
+    "time": {
+      "type": "string",
+      "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$"
+    },
+    "day": {
+      "enum": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "season": {
+      "type": "object",
+      "required": ["name", "start", "end"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "e.g. 2026/27"
+        },
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "studio": {
+      "type": "object",
+      "required": ["name", "address", "email", "bookingUrl", "parking"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "object",
+          "required": ["street", "floor", "district", "city", "postcode"],
+          "additionalProperties": false,
+          "properties": {
+            "street": {
+              "type": "string"
+            },
+            "floor": {
+              "$ref": "#/$defs/localized"
+            },
+            "district": {
+              "$ref": "#/$defs/localized"
+            },
+            "city": {
+              "type": "string"
+            },
+            "postcode": {
+              "type": "string"
+            }
+          }
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "enrolmentEmailSubject": {
+          "type": "string",
+          "description": "Subject line for enrolment emails."
+        },
+        "bookingUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Fitssey booking (external)."
+        },
+        "parking": {
+          "$ref": "#/$defs/localized"
+        },
+        "social": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "classTypes": {
+      "description": "Kinds of classes. Each schedule entry points to one class type.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "audience", "name", "capacity", "closedGroup"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "audience": {
+            "$ref": "#/$defs/audience"
+          },
+          "name": {
+            "$ref": "#/$defs/localized"
+          },
+          "ages": {
+            "description": "Age range in years and a visible label. Omit min/max when there is no limit.",
+            "type": "object",
+            "required": ["label"],
+            "additionalProperties": false,
+            "properties": {
+              "min": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "max": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "label": {
+                "$ref": "#/$defs/localized"
+              }
+            }
+          },
+          "requirement": {
+            "$ref": "#/$defs/localized",
+            "description": "Must be shown before booking, e.g. minimum height."
+          },
+          "capacity": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "closedGroup": {
+            "type": "boolean",
+            "description": "True = fixed group for the whole season."
+          }
+        }
+      }
+    },
+    "schedule": {
+      "description": "Typical weekly plan.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "classTypeId", "day", "start", "end", "instructor"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "classTypeId": {
+            "type": "string"
+          },
+          "day": {
+            "$ref": "#/$defs/day"
+          },
+          "start": {
+            "$ref": "#/$defs/time"
+          },
+          "end": {
+            "$ref": "#/$defs/time"
+          },
+          "instructor": {
+            "type": "string",
+            "description": "First name only."
+          }
+        }
+      }
+    },
+    "prices": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "audience", "name", "amount", "currency"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "audience": {
+            "$ref": "#/$defs/audience"
+          },
+          "name": {
+            "$ref": "#/$defs/localized"
+          },
+          "amount": {
+            "type": "number",
+            "minimum": 0
+          },
+          "currency": {
+            "const": "PLN"
+          },
+          "per": {
+            "$ref": "#/$defs/localized",
+            "description": "What the amount covers, e.g. per month."
+          },
+          "highlight": {
+            "type": "boolean",
+            "description": "Show as the recommended option."
+          }
+        }
+      }
+    }
+  }
+}

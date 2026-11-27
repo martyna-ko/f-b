@@ -1,0 +1,422 @@
+{
+  "$schema": "./schema/studio.schema.json",
+  "season": {
+    "name": "2026/27",
+    "start": "2026-09-01",
+    "end": "2027-06-30"
+  },
+  "studio": {
+    "name": "Find Balans",
+    "address": {
+      "street": "ul. Świętego Mikołaja 1",
+      "floor": {
+        "en": "2nd floor",
+        "pl": "II piętro"
+      },
+      "district": {
+        "en": "Bemowo (Blizne Łaszczyńskiego)",
+        "pl": "Bemowo (Blizne Łaszczyńskiego)"
+      },
+      "city": "Warsaw",
+      "postcode": "05-082"
+    },
+    "email": "findbalans@gmail.com",
+    "enrolmentEmailSubject": "Zapisy",
+    "bookingUrl": "https://app.fitssey.com/findbalans",
+    "parking": {
+      "en": "Large free car park",
+      "pl": "Duży, darmowy parking"
+    },
+    "social": {
+      "instagram": "https://www.instagram.com/findbalans/",
+      "facebook": "https://www.facebook.com/findbalanspage/"
+    }
+  },
+  "classTypes": [
+    {
+      "id": "hammocks-5-6",
+      "audience": "kids",
+      "name": {
+        "en": "Aerial hammocks",
+        "pl": "Hamaki"
+      },
+      "ages": {
+        "min": 5,
+        "max": 6,
+        "label": {
+          "en": "Kids 5–6",
+          "pl": "Dzieci 5–6 lat"
+        }
+      },
+      "capacity": 8,
+      "closedGroup": true
+    },
+    {
+      "id": "hammocks-7-10",
+      "audience": "kids",
+      "name": {
+        "en": "Aerial hammocks",
+        "pl": "Hamaki"
+      },
+      "ages": {
+        "min": 7,
+        "max": 10,
+        "label": {
+          "en": "Kids 7–10",
+          "pl": "Dzieci 7–10 lat"
+        }
+      },
+      "capacity": 8,
+      "closedGroup": true
+    },
+    {
+      "id": "hammocks-11-14",
+      "audience": "kids",
+      "name": {
+        "en": "Aerial hammocks",
+        "pl": "Hamaki"
+      },
+      "ages": {
+        "min": 11,
+        "max": 14,
+        "label": {
+          "en": "Kids 11–14",
+          "pl": "Dzieci 11–14 lat"
+        }
+      },
+      "capacity": 8,
+      "closedGroup": true
+    },
+    {
+      "id": "disco-dance-5-6",
+      "audience": "kids",
+      "name": {
+        "en": "Disco dance",
+        "pl": "Disco Dance"
+      },
+      "ages": {
+        "min": 5,
+        "max": 6,
+        "label": {
+          "en": "Kids 5–6",
+          "pl": "Dzieci 5–6 lat"
+        }
+      },
+      "capacity": 10,
+      "closedGroup": true
+    },
+    {
+      "id": "choreo-kids",
+      "audience": "kids",
+      "name": {
+        "en": "Choreo / commercial dance",
+        "pl": "Choreo / Commercial"
+      },
+      "ages": {
+        "label": {
+          "en": "Kids, open age",
+          "pl": "Dzieci, bez podziału na wiek"
+        }
+      },
+      "capacity": 10,
+      "closedGroup": true
+    },
+    {
+      "id": "family-hammocks",
+      "audience": "family",
+      "name": {
+        "en": "Family aerial hammocks",
+        "pl": "Hamaki – zajęcia rodzinne"
+      },
+      "ages": {
+        "min": 5,
+        "label": {
+          "en": "Family · kids 5+",
+          "pl": "Rodzinne · dzieci 5+"
+        }
+      },
+      "capacity": 8,
+      "closedGroup": false
+    },
+    {
+      "id": "aerial-hoop",
+      "audience": "adults",
+      "name": {
+        "en": "Aerial hoop",
+        "pl": "Koła"
+      },
+      "requirement": {
+        "en": "Minimum height 140 cm",
+        "pl": "Minimalny wzrost 140 cm"
+      },
+      "capacity": 8,
+      "closedGroup": false
+    },
+    {
+      "id": "hammocks-acrobatics",
+      "audience": "adults",
+      "name": {
+        "en": "Aerial hammocks – acrobatics",
+        "pl": "Hamaki – akrobatyka"
+      },
+      "capacity": 8,
+      "closedGroup": false
+    },
+    {
+      "id": "handstand",
+      "audience": "adults",
+      "name": {
+        "en": "Handstand",
+        "pl": "Find Handstand"
+      },
+      "capacity": 10,
+      "closedGroup": false
+    }
+  ],
+  "schedule": [
+    {
+      "id": "mon-1700",
+      "classTypeId": "hammocks-7-10",
+      "day": "mon",
+      "start": "17:00",
+      "end": "17:50",
+      "instructor": "Zosia"
+    },
+    {
+      "id": "mon-1800",
+      "classTypeId": "hammocks-5-6",
+      "day": "mon",
+      "start": "18:00",
+      "end": "18:50",
+      "instructor": "Zosia"
+    },
+    {
+      "id": "mon-1900",
+      "classTypeId": "family-hammocks",
+      "day": "mon",
+      "start": "19:00",
+      "end": "19:50",
+      "instructor": "Zosia"
+    },
+    {
+      "id": "wed-1600",
+      "classTypeId": "hammocks-7-10",
+      "day": "wed",
+      "start": "16:00",
+      "end": "16:50",
+      "instructor": "Marta"
+    },
+    {
+      "id": "wed-1700",
+      "classTypeId": "hammocks-5-6",
+      "day": "wed",
+      "start": "17:00",
+      "end": "17:50",
+      "instructor": "Marta"
+    },
+    {
+      "id": "wed-1800",
+      "classTypeId": "hammocks-7-10",
+      "day": "wed",
+      "start": "18:00",
+      "end": "18:50",
+      "instructor": "Marta"
+    },
+    {
+      "id": "wed-1900",
+      "classTypeId": "aerial-hoop",
+      "day": "wed",
+      "start": "19:00",
+      "end": "19:55",
+      "instructor": "Marta"
+    },
+    {
+      "id": "wed-2000",
+      "classTypeId": "hammocks-acrobatics",
+      "day": "wed",
+      "start": "20:00",
+      "end": "20:55",
+      "instructor": "Marta"
+    },
+    {
+      "id": "thu-1600",
+      "classTypeId": "disco-dance-5-6",
+      "day": "thu",
+      "start": "16:00",
+      "end": "16:50",
+      "instructor": "Ola"
+    },
+    {
+      "id": "thu-1700",
+      "classTypeId": "choreo-kids",
+      "day": "thu",
+      "start": "17:00",
+      "end": "17:50",
+      "instructor": "Ola"
+    },
+    {
+      "id": "fri-1600",
+      "classTypeId": "hammocks-7-10",
+      "day": "fri",
+      "start": "16:00",
+      "end": "16:50",
+      "instructor": "Ania"
+    },
+    {
+      "id": "fri-1700",
+      "classTypeId": "hammocks-7-10",
+      "day": "fri",
+      "start": "17:00",
+      "end": "17:50",
+      "instructor": "Ania"
+    },
+    {
+      "id": "fri-1800",
+      "classTypeId": "hammocks-11-14",
+      "day": "fri",
+      "start": "18:00",
+      "end": "18:50",
+      "instructor": "Ania"
+    },
+    {
+      "id": "fri-1900",
+      "classTypeId": "aerial-hoop",
+      "day": "fri",
+      "start": "19:00",
+      "end": "19:55",
+      "instructor": "Ania"
+    },
+    {
+      "id": "fri-2000",
+      "classTypeId": "hammocks-acrobatics",
+      "day": "fri",
+      "start": "20:00",
+      "end": "20:55",
+      "instructor": "Ania"
+    },
+    {
+      "id": "sun-1930",
+      "classTypeId": "handstand",
+      "day": "sun",
+      "start": "19:30",
+      "end": "20:30",
+      "instructor": "Ewa"
+    }
+  ],
+  "prices": [
+    {
+      "id": "kids-month",
+      "audience": "kids",
+      "name": {
+        "en": "Closed group — monthly",
+        "pl": "Grupa zamknięta — co miesiąc"
+      },
+      "amount": 330,
+      "currency": "PLN",
+      "per": {
+        "en": "per month",
+        "pl": "miesięcznie"
+      }
+    },
+    {
+      "id": "kids-2-months",
+      "audience": "kids",
+      "name": {
+        "en": "Closed group — every 2 months",
+        "pl": "Grupa zamknięta — co 2 miesiące"
+      },
+      "amount": 600,
+      "currency": "PLN",
+      "per": {
+        "en": "per 2 months (save 60 zł)",
+        "pl": "za 2 miesiące (60 zł taniej)"
+      },
+      "highlight": true
+    },
+    {
+      "id": "kids-trial",
+      "audience": "kids",
+      "name": {
+        "en": "Trial class",
+        "pl": "Wejście próbne"
+      },
+      "amount": 60,
+      "currency": "PLN",
+      "per": {
+        "en": "one class",
+        "pl": "jedne zajęcia"
+      }
+    },
+    {
+      "id": "kids-single",
+      "audience": "kids",
+      "name": {
+        "en": "Single entry",
+        "pl": "Jednorazowe wejście"
+      },
+      "amount": 75,
+      "currency": "PLN",
+      "per": {
+        "en": "one class",
+        "pl": "jedne zajęcia"
+      }
+    },
+    {
+      "id": "family-single",
+      "audience": "family",
+      "name": {
+        "en": "Family class",
+        "pl": "Zajęcia rodzinne"
+      },
+      "amount": 75,
+      "currency": "PLN",
+      "per": {
+        "en": "per person",
+        "pl": "za osobę"
+      }
+    },
+    {
+      "id": "adults-single",
+      "audience": "adults",
+      "name": {
+        "en": "Single class",
+        "pl": "Jednorazowe wejście"
+      },
+      "amount": 60,
+      "currency": "PLN",
+      "per": {
+        "en": "one class",
+        "pl": "jedne zajęcia"
+      }
+    },
+    {
+      "id": "adults-4",
+      "audience": "adults",
+      "name": {
+        "en": "4 classes",
+        "pl": "Karnet 4 wejścia"
+      },
+      "amount": 220,
+      "currency": "PLN",
+      "per": {
+        "en": "valid 1 month",
+        "pl": "ważny 1 miesiąc"
+      }
+    },
+    {
+      "id": "adults-8",
+      "audience": "adults",
+      "name": {
+        "en": "8 classes",
+        "pl": "Karnet 8 wejść"
+      },
+      "amount": 380,
+      "currency": "PLN",
+      "per": {
+        "en": "valid 1 month",
+        "pl": "ważny 1 miesiąc"
+      },
+      "highlight": true
+    }
+  ]
+}
