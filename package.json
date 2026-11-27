@@ -15,6 +15,7 @@
     "prebuild-storybook": "npm run tokens",
     "tokens": "style-dictionary build --config style-dictionary.config.mjs --silent",
     "tokens:check": "node scripts/check-contrast.mjs",
+    "content:check": "node scripts/check-content.mjs",
     "typecheck": "tsc -b",
     "pretypecheck": "npm run tokens",
     "lint": "oxlint",
@@ -24,7 +25,7 @@
     "format:check": "prettier --check .",
     "test": "vitest run",
     "pretest": "npm run tokens",
-    "check": "npm run typecheck && npm run tokens:check && npm run lint && npm run lint:css && npm run format:check && npm run build",
+    "check": "npm run typecheck && npm run tokens:check && npm run content:check && npm run lint && npm run lint:css && npm run format:check && npm run build",
     "check:setup": "bash scripts/check-setup.sh"
   },
   "dependencies": {
@@ -44,6 +45,7 @@
     "@vitejs/plugin-react": "^6.1.2",
     "@vitest/browser-playwright": "latest",
     "@vitest/coverage-v8": "latest",
+    "ajv": "^8.20.0",
     "oxlint": "^1.90.0",
     "playwright": "latest",
     "prettier": "^3.10.1",
