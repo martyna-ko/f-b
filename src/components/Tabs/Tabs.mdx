@@ -1,0 +1,30 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+import * as Stories from './Tabs.stories';
+
+<Meta of={Stories} />
+
+# Tabs
+
+**Purpose:** filter one view by audience — on the schedule page: All · Kids · Family · Adults (step "Schedule: Kids / Adults" in both user flows).
+
+<Canvas of={Stories.Default} />
+
+## Anatomy
+
+Tab list (pill-shaped tabs) · panel with the selected content.
+
+## States
+
+Default · hover · selected (violet, bold) · keyboard focus (violet ring).
+
+## Usage
+
+- ✅ 2–5 short labels that switch views of the _same_ content.
+- ✅ Controlled component: the page keeps the selected value (so it can also go in the URL later).
+- ❌ Don't use for navigation between pages — use links.
+
+## Accessibility (WAI-ARIA tabs pattern)
+
+- `tablist` / `tab` / `tabpanel` roles; `aria-selected`, `aria-controls`, `aria-labelledby`.
+- Only the selected tab is in the Tab order; **arrow keys** move between tabs, **Home/End** jump, selection follows focus.
+- Tabs wrap on narrow screens; touch target ≥ 44px.

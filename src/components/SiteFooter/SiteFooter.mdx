@@ -1,0 +1,29 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as Stories from './SiteFooter.stories';
+
+<Meta of={Stories} />
+
+# SiteFooter
+
+**Purpose:** contact details, social links and the portfolio notice on every page (site map: "On every page").
+
+<Canvas of={Stories.Default} />
+
+## Anatomy
+
+White logo · address and email · social links · portfolio notice.
+
+## Responsive
+
+Stacked on mobile; three columns from 768px.
+
+## Usage
+
+- ✅ Address, email and links from `content/studio.json`; notice text from `content/*.json`.
+- ✅ The portfolio notice must always be visible — it tells visitors this is a case study.
+
+## Accessibility
+
+- `<footer>` landmark; address in `<address>`.
+- White text on black: 21:1. Links are underlined (not colour only); focus ring is white on black.
+- Social links announce "(opens in a new tab)".

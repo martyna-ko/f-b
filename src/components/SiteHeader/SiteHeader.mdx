@@ -1,0 +1,40 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as Stories from './SiteHeader.stories';
+
+<Meta of={Stories} />
+
+# SiteHeader
+
+**Purpose:** the "On every page" header from the site map — logo (home), main navigation, EN/PL switch and Book button.
+
+<Canvas of={Stories.Default} />
+
+## Anatomy
+
+1. Skip link (visible only on keyboard focus) → jumps to the main content
+2. Logo → home page in the current language
+3. Menu button (below 1024px)
+4. Main navigation — the 7 pages from the site map, current page marked
+5. Language switch (EN / PL) → the same page in the other language
+6. Book → Fitssey, new tab
+
+## Responsive
+
+- **Below 1024px:** logo + Menu button; navigation opens as a panel under the bar.
+- **From 1024px:** everything inline in one row.
+
+## Usage
+
+- ✅ Texts come from `content/*.json` — the component has no hard-coded language.
+- ✅ Pass `linkComponent` (router link) so navigation does not reload the page.
+- ✅ Language links point to the _same page_ in the other language, not to the home page.
+
+<Canvas of={Stories.Polish} />
+
+## Accessibility
+
+- Skip link as the first focusable element (WCAG 2.4.1).
+- `<nav aria-label>`; current page has `aria-current="page"` — not colour only (bold + underline).
+- Menu button has `aria-expanded` and `aria-controls`; **Escape** closes the menu and returns focus to the button.
+- Language links use `lang` / `hreflang`; screen readers hear "English" / "Polski", not "EN" / "PL".
+- All targets ≥ 44px.
